@@ -476,7 +476,7 @@ a.navbar-brand {
     height: calc(81vh - 40px);    
 }
 .row-box.height5 {
-    height: calc(47vh - 101px);
+    height: calc(47vh - 105px);
 }
 #volume>div{
     min-height: calc(47vh - 76px);

@@ -411,6 +411,7 @@
 	$("#b_help").niceScroll(scrollDiv);
 	$("#b_accounts").niceScroll(scrollDiv);
 	$(".height2").niceScroll(scrollDiv);
+        $(".height3").niceScroll(scrollDiv);
 	$(".height7").niceScroll(scrollDiv);
 	$(".height6").niceScroll(scrollDiv);
 	$("#orders").niceScroll(scrollDiv);
@@ -436,6 +437,10 @@
 
 	$('.height2').bind("DOMSubtreeModified", function () {
 	    $(".height2").getNiceScroll().resize();
+	});
+        
+        $('.height3').bind("DOMSubtreeModified", function () {
+	    $(".height3").getNiceScroll().resize();
 	});
 
 	$('#balance').bind("DOMSubtreeModified", function () {
