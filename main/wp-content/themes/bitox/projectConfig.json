@@ -1,0 +1,6 @@
+{
+  "devDomain": "http://bitox.dev",
+  "vendor": [
+    "node_modules/**//slick-carousel/slick/**/*"
+  ]
+}

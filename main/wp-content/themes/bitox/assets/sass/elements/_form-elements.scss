@@ -1,0 +1,120 @@
+// Все элементы формы
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+select {
+  font-family: inherit;
+  width: 100%;
+  max-width: 100%;
+  background: none;
+  outline: 0 none;
+  border: none;
+  border-bottom: 1px solid #979797;
+  padding: 15px 15px 15px 0;
+  color: #858585;
+  background-color: #fff;
+  margin: 0;
+}
+
+textarea {
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+}
+
+input[type="submit"] {
+  @extend .btn, .btn-primary;
+}
+
+input[type="search"] {
+  @extend .btn;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+.form {
+  @include placeholder(#858585);
+
+  input, textarea, select {
+    @include min-w($screen-sm) {
+      font-size: 36px;
+    }
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 60px - $container-padding;
+    max-width: 640px;
+  }
+
+  &__btn,
+  &__btn.btn {
+    @include min-w($screen-sm) {
+      min-width: 294px;
+      min-height: 80px;
+      font-size: 40px;
+      border-width: 2px;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    color: #333;
+    @include min-w($screen-sm) {
+      margin-bottom: 30px;
+      font-size: 48px;
+    }
+  }
+
+  &__groups {
+    margin-bottom: 50px;
+    @include min-w($screen-sm) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__group {
+    margin-bottom: 15px;
+  }
+
+  &__selected-files {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__select-title {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  &__info {
+    color: #9b9b9b;
+    @include min-w($screen-sm) {
+      font-size: 22px;
+    }
+
+    &--bold {
+      font-size: 18px;
+      font-weight: 700;
+      color: #333;
+    }
+  }
+}

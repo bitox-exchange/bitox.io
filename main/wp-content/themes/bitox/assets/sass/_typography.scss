@@ -1,0 +1,40 @@
+//  Import fonts
+
+// Example
+// font-family: 'Bebas Neue'
+// font-weight: 700
+//@font-face {
+//  font-family: 'Bebas Neue';
+//  font-weight: 700;
+//  src:  local('BebasNeue'), local('BebasNeue-Bold');
+//  src:  url('../fonts/BebasNeue-Bold.ttf') format('truetype');
+//}
+
+// Titles
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+  color: #424242;
+}
+
+h1,
+.entry-title {
+  font-size: 35px;
+  @include min-w($screen-lg) {
+    font-size: 63px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  @include min-w($screen-lg) {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  @include min-w($screen-lg) {
+    font-size: 24px;
+  }
+}

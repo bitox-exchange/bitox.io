@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script>
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        if(getCookie('is_started') != 'ok'){
+            location.replace('/main');
+        }        
+    </script>        
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,21 +28,16 @@
 	<link href="/images/favicon.ico" rel="icon" />
         
         <link href="/assets/css/bootstrap24/css/bootstrap.min.css" rel="stylesheet" />
-        
-	<!--<link href="/css/bootstrap.min.css" rel="stylesheet" />-->
-	
+        	
 	<link href="/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
 	<link href="/css/alertify.min.css" rel="stylesheet" />
-	<link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
-	<!--<link href="/black.css" rel="stylesheet" id="stylesheet" />-->	
-	<link href="/assets/css/black.css" rel="stylesheet" id="stylesheet" />
-	<!--<link href="/assets/css/white.css" rel="stylesheet" id="stylesheet" />-->
-	<!--<link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 480px)" />-->
+	<link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />	
+	<link href="/assets/css/black.css" rel="stylesheet" id="stylesheet" />	
 	<link href="/assets/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 991px)" />
 	<title>Bitox</title>
     </head>
-
+    
     <body>
 
 	<nav class="navbar navbar-default">
@@ -46,10 +61,6 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-		    <!--<ul class="nav navbar-nav">
-			<li class="dropdown" id="tokensDropdown"></li>			
-		    </ul>-->
-
 		    <ul id="js_nav_menu" class="nav navbar-nav navbar-right">
 			<li>
 			    <a href="" class="b_tokens">
@@ -71,8 +82,7 @@
 				<div class="contract28"></div>
 				<span>Contract</span>				
 			    </a>
-			</li>
-			<!--<li class="dropdown" id="connection"></li>-->
+			</li>			
 
 			<li>
 			    <a href="" class="b_help"  data-key="b_help">
@@ -80,7 +90,6 @@
 				<span>Help</span>								
 			    </a>
 			</li>
-			<!--<li class="dropdown" id="helpDropdown"></li>-->
 
 			<li>
 			    <a href="" class="b_settings"  data-key="b_settings">
@@ -88,12 +97,8 @@
 				<span>Settings</span>								
 			    </a>
 			</li>
-			<!--<li class="dropdown" id="languages"></li>-->
 
-			<li class="li_current_accounts">
-			    
-			</li>
-
+			<li class="li_current_accounts"></li>
 			<li class="li_accounts">			    
 			    <a href="" class="b_accounts" data-key="b_accounts">
 				<div class="accounts28">
@@ -102,8 +107,6 @@
 				<span>ACCOUNT</span>				
 			    </a>
 			</li>
-			<!--<li class="dropdown" id="accounts"></li>-->
-
 			
 		    </ul>
 		</div><!-- /.navbar-collapse -->
@@ -126,8 +129,8 @@
 		<div class="b_acc pull-right" id="b_settings">
 		    <p>Theme</p>		    
 		    <div class="row row-mode">
-			<a href="javascript:;" class="btn btn-mode-light pull-left js_mode-light" onclick="document.getElementById('stylesheet').setAttribute('href', '/bitox_html/assets/css/white.css')">LIGHT MODE</a>
-			<a href="javascript:;" class="btn btn-mode-dark pull-right js_mode-dark" onclick="document.getElementById('stylesheet').setAttribute('href', '/bitox_html/assets/css/black.css')">DARK MODE</a>
+			<a href="javascript:;" class="btn btn-mode-light pull-left js_mode-light" onclick="document.getElementById('stylesheet').setAttribute('href', '/assets/css/white.css')">LIGHT MODE</a>
+			<a href="javascript:;" class="btn btn-mode-dark pull-right js_mode-dark" onclick="document.getElementById('stylesheet').setAttribute('href', '/assets/css/black.css')">DARK MODE</a>
 		    </div>
 		    <p>Language</p>
 		    <div class="dropdown" id="languages"></div>

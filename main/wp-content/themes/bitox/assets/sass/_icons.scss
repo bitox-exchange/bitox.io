@@ -1,0 +1,39 @@
+// Manual icons
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+// common icon class for socials
+// (.icon-<social_name>)
+.icon-socials {
+  width: 21px;
+  height: 21px;
+  @include min-w($screen-lg) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.icon-facebook {
+  background-image: url(../images/icons/icon-facebook.png);
+}
+.icon-git {
+  background-image: url(../images/icons/icon-git.png);
+}
+.icon-reddit {
+  background-image: url(../images/icons/icon-reddit.png);
+}
+.icon-slack {
+  background-image: url(../images/icons/icon-slack.png);
+}
+.icon-twitter {
+  background-image: url(../images/icons/icon-twitter.png);
+}
+.icon-youtube {
+  background-image: url(../images/icons/icon-youtube.png);
+}

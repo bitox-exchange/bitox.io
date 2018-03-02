@@ -1,0 +1,60 @@
+// Mixins
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin clearlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin absolute-center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $color;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $color;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color;
+  }
+}
+
+@mixin aspect-ratio($originalWidth, $originalHeight, $newWidth) {
+  width: $originalWidth;
+  height: ($originalHeight / $originalWidth) * $newWidth;
+}
+
+// Media Queries Min Width
+@mixin min-w($width) {
+  @media screen and (min-width: $width) { @content; }
+}
+
+// Media Queries Max Width
+// @param bool $desktopFirst
+@mixin max-w($width, $desktopFirst: true) {
+  @if($desktopFirst == true) {
+    @media screen and (max-width: $width - 1) { @content; }
+  }
+  @if($desktopFirst == false) {
+    @media screen and (max-width: $width) { @content; }
+  }
+}

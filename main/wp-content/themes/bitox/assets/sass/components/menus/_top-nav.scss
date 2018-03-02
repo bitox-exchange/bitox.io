@@ -1,0 +1,25 @@
+.top-nav {
+  ul {
+    li {
+      display: inline-block;
+      padding-right: 10px;
+      @include min-w($screen-lg) {
+        padding-right: 25px;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:first-child {
+        a {
+          color: #2F2F2F;
+
+          &:hover {
+            color: lighten(#2F2F2F, 20%);
+          }
+        }
+      }
+    }
+  }
+}

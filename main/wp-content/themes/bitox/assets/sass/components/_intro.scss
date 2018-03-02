@@ -1,0 +1,48 @@
+.intro {
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  @include min-w($screen-sm) {
+    position: relative;
+    overflow: visible;
+  }
+  @include min-w($screen-lg) {
+    margin-top: 75px;
+    margin-bottom: 150px;
+  }
+
+  &__branding {
+    position: relative;
+    z-index: 2;
+    max-width: 297px;
+    @include min-w($screen-lg) {
+      max-width: 613px;
+    }
+  }
+
+  &__image-wrapper {
+    @include min-w($screen-sm) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: auto;
+    }
+  }
+
+  &__items-group {
+    margin-right: -25%;
+    @include min-w($screen-sm) {
+      margin-right: 0;
+    }
+  }
+
+  &__description {
+    color: #565656;
+    line-height: 30px;
+    font-size: 16px;
+    @include min-w($screen-lg) {
+      font-size: 17px;
+    }
+  }
+}

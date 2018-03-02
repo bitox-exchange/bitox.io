@@ -1,0 +1,116 @@
+.advantage {
+  flex-direction: column;
+  margin-bottom: 20px;
+  @include max-w($screen-xs) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  @include min-w($screen-lg) {
+    margin-bottom: 50px;
+  }
+
+  &__image-wrapper {
+    margin-bottom: 10px;
+    text-align: center;
+    @include min-w($screen-lg) {
+      margin-bottom: 22px;
+    }
+
+    img {
+      max-width: 50px;
+      @include min-w($screen-lg) {
+        max-width: none;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    max-width: 198px;
+    @include min-w($screen-lg) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #454545;
+    @include min-w($screen-lg) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &__number-group {
+    margin-bottom: 15px;
+  }
+
+  &__number {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $theme-color;
+    @include min-w($screen-lg) {
+      font-size: 24px;
+    }
+  }
+
+  &__separator {
+    width: 100%;
+    height: 2px;
+    background-color: $theme-color;
+    @include min-w($screen-lg) {
+      height: 4px;
+    }
+  }
+}
+
+
+// .advantages-2
+
+.advantages-2 {
+  margin-bottom: 60px;
+
+  @include min-w($screen-lg) {
+    margin-bottom: 100px;
+  }
+}
+
+.advantage-2 {
+  margin-bottom: 50px;
+  &:first-child {
+    flex-direction: row-reverse;
+    div:first-child {
+      text-align: right;
+    }
+  }
+
+  &__img-col {
+    @include max-w($screen-xs) {
+      display: none;
+    }
+  }
+
+  &__text-col {
+    @include max-w($screen-xs) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+
+// .how-works
+
+.how-works {
+  margin-bottom: 60px;
+  @include min-w($screen-lg) {
+    margin-bottom: 100px;
+  }
+
+  .advantage__title,
+  .advantage__number-group {
+    margin-bottom: 0;
+  }
+}
