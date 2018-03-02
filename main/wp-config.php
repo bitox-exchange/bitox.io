@@ -26,7 +26,7 @@ define('DB_NAME', 'bitoxlanding-bitox');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Sicily77*');
+define('DB_PASSWORD', 'b4x0rd<FW/]');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
