@@ -476,10 +476,10 @@ a.navbar-brand {
     height: calc(81vh - 40px);    
 }
 .row-box.height5 {
-    height: calc(48vh - 101px);
+    height: calc(47vh - 101px);
 }
 #volume>div{
-    min-height: calc(48vh - 76px);
+    min-height: calc(47vh - 76px);
 
 }
 #orders>div{
@@ -869,15 +869,20 @@ input{
     font-size: 12px;
 }
 .table-balances tr.table-header,
-.height2 tr.table-header{
+.height2 tr.table-header,
+.height5 tr.table-header,
+.height7 tr.table-header{
     border-bottom: 0.5px solid #3E3F54;
 }
 .table-balances td,
-.height2 tr.table-header th{
+.height2 tr.table-header th,
+.height5 tr.table-header th,
+.height7 tr.table-header th{
     	color: #989ABA;
 	font-family: "Open Sans";
 	font-size: 12px;
 	line-height: 17px;
+        font-weight: normal;
 }
 .table-balances input.input-xs{
     height: 28px;
@@ -1409,4 +1414,43 @@ input{
 .padding-sides{
     padding-left: 0;
     padding-right: 0;
+}
+
+/*from ForkDelta*/
+.ttip {
+  position: relative;
+  display: inline-block;
+}
+
+.ttip .text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.ttip .text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.ttip:hover .text {
+  visibility: visible;
+}
+#accounts ul.dropdown-menu{
+    overflow-x: hidden;
 }
