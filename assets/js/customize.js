@@ -196,9 +196,9 @@
 			    $('<li role="separator" class="divider divider-empty"></li>').insertAfter(this);
 			} else if ($(this).find('span').hasClass('badge')) {
 			    $(this).addClass('a_change');
-			} else if ($(this).find('span').data('trn-key') == 'ledger' ) {
-			    $(this).css({'display':'none'});
-			} else if ($(this).find('span').data('trn-key') == 'import_account' || $(this).find('span').data('trn-key') == 'gas_price' ) {
+			/*} else if ($(this).find('span').data('trn-key') == 'ledger' ) {
+			    $(this).css({'display':'none'});*/
+			} else if ($(this).find('span').data('trn-key') == 'import_account' || $(this).find('span').data('trn-key') == 'gas_price' || $(this).find('span').data('trn-key') == 'ledger' ) {
 			    $(this).prepend('<p class="p_capt bold">' + title + '</p>');
 			    $(this).find('a').addClass('a_capt btn-mode-dark a_' + $(this).find('span').data('trn-key'));
 			    $(this).find('a').append(title);
@@ -357,6 +357,7 @@
 	    
 	    $('.ReactModalPortal .btn-default').click();
 	    $('.ReactModalPortal').css({'display': 'none'});
+            
 	    setTimeout(function () {
 		    $('.modal-body .ad').closest('.ReactModalPortal').addClass('modal_hide');
 		    $('.ReactModalPortal').removeAttr('style');
