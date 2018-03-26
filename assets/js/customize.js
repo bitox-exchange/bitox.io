@@ -217,7 +217,7 @@
 	    if ( $('#accounts a.dropdown-toggle').find('span').data('trn-key') == 'select_account' ){
 		$('.li_current_accounts').html('');
 	    }else{
-		$('.li_current_accounts').html('<div class="text-center">'+$('#accounts a.dropdown-toggle').html()+'<span class="bage_capt">PRIVAT KEY</span></div>');
+		$('.li_current_accounts').html('<div class="text-center">'+$('#accounts a.dropdown-toggle').html()+'<span class="bage_capt">PRIVATE KEY</span></div>');
 	    }	    
 	}
 
