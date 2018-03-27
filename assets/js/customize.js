@@ -317,6 +317,15 @@
 	    $('.ReactModalPortal .btn-default').click();
 	    clearImportAccount();
 	});
+        
+        $(document).on('click', '.ajs-button.btn-danger', function () {
+	    if($(this).text() == 'Yes, forget account'){
+                setTimeout(function () {
+                    $('.ajs-dialog').find('.ajs-close').click();
+                    closeAddTabAccount();
+                },300);
+            }	    
+	});
 	
 	function showAddTabAccount () {
 
@@ -339,9 +348,15 @@
 		    $('.acc_2_test').append(this);
 		    test++;
 		}else{
-		    $(this).css({'display':'none'});
+                    $('.acc_2_test').append('<p class="acc_2_label">Forget account</p>');
+		    $(this).children('a').addClass('btn-mode-dark');
+		    $(this).children('a').children('span').text('Forget account!');
 		    $('.acc_2_test').append(this);
 		    test++;
+                    
+		    //$(this).css({'display':'none'});                    
+		    //$('.acc_2_test').append(this);
+		    //test++;
 		}
 
 	    });
