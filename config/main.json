@@ -16,7 +16,7 @@
   "gasWithdraw": 250000,
   "gasTrade": 250000,
   "gasOrder": 250000,
-  "minOrderSize": 0.001,
+  "minOrderSize": 0.000001,
   "socketServer": "https://backend.bitox.io",
   "userCookie": "Bitox",
   "eventsCacheCookie": "Bitox_eventsCache",
