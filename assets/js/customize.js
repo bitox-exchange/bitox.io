@@ -303,7 +303,7 @@
 
 	$(document).on('click', '#i_a_accountSubmit', function () {
 	    $('#accountSubmit').closest('.modal-content').find('input').val($('#i_a_address').val());
-	    $('#accountSubmit').closest('.modal-content').find('#pkDiv').children('input').val($('#i_a_private_key').val());
+	    $('#accountSubmit').closest('.modal-content').find('#pkDiv').find('input').val($('#i_a_private_key').val());
 	    $('#accountSubmit').click();
 	    clearImportAccount();
 	});
