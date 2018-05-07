@@ -356,6 +356,7 @@
     { "addr": "0x5afda18caba69fe3af5e6d56e42e1c9f92c40d77", "name": "MCD", "decimals": 18 },
     { "addr": "0x5b0751713b2527d7f002c0c4e2a37e1219610a6b", "name": "HORSE", "decimals": 18 },
     { "addr": "0x5bc7e5f0ab8b2e10d2d0a3f21739fce62459aef3", "name": "ENTRP", "decimals": 18 },
+    { "addr": "0x5c25bab9b4ab4c6ede1d7092f2f1bf92287d10bc", "name": "CCC", "decimals": 18 },
     { "addr": "0x5c5413bad5f6fdb0f4fcd1457e46ead8e01d73d3", "name": "UAHOLD", "decimals": 18 },
     { "addr": "0x5c543e7ae0a1104f78406c340e9c64fd9fce5170", "name": "VSL", "decimals": 18 },
     { "addr": "0x5c6183d10a00cd747a6dbb5f658ad514383e9419", "name": "NXXOLD", "decimals": 8 },
