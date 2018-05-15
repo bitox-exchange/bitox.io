@@ -252,6 +252,7 @@
     { "addr": "0x3a1237d38d0fb94513f85d61679cad7f38507242", "name": "MIC", "decimals": 18 },
     { "addr": "0x3a1bda28adb5b0a812a7cf10a1950c920f79bcd3", "name": "FLP", "decimals": 18 },
     { "addr": "0x3a26746ddb79b1b8e4450e3f4ffe3285a307387e", "name": "ETHB", "decimals": 8 },
+    { "addr": "0x3a92bd396aef82af98ebc0aa9030d25a23b11c6b", "name": "TBX", "decimals": 18 },
     { "addr": "0x3adfc4999f77d04c8341bac5f3a76f58dff5b37a", "name": "PRIX", "decimals": 8 },
     { "addr": "0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244", "name": "RVT", "decimals": 18 },
     { "addr": "0x3d46454212c61ecb7b31248047fa033120b88668", "name": "MVT", "decimals": 18 },
