@@ -651,6 +651,7 @@
     { "addr": "0xb41b531359330d76bbcb0f1a24f94ff6bff30dc1", "name": "NE5G", "decimals": 2 },
     { "addr": "0xb444208cb0516c150178fcf9a52604bc04a1acea", "name": "GRMD", "decimals": 18 },
     { "addr": "0xb45a50545beeab73f38f31e5973768c421805e5e", "name": "TKR", "decimals": 18 },
+    { "addr": "0xb45893bd77830bec7c305aded041bd74f0343bd1", "name": "VIX", "decimals": 18 },
     { "addr": "0xb4b1d2c217ec0776584ce08d3dd98f90ededa44b", "name": "CO2", "decimals": 18 },
     { "addr": "0xb4bfa6b45e25ad12bb033ec8a5eff523b83cc9af", "name": "UAHPAY", "decimals": 18 },
     { "addr": "0xb4c55b5a1faf5323e59842171c2492773a3783dd", "name": "BCDC", "decimals": 18 },
