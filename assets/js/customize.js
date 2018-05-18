@@ -250,6 +250,7 @@
 		$(addParent).hide();
 
 		setTimeout(function () {
+        $('#g_p_gas_price_gwei').val($('#accountSubmit').closest('.modal-content').find('input').val());
 		    $('#accountSubmit').closest('.ReactModalPortal').addClass('modal_hide');
 		    $('.ReactModalPortal').removeAttr('style');
 		}, 100);
