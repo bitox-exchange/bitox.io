@@ -666,6 +666,7 @@
     { "addr": "0xb554cf51cda0fccd5012d55737c4df55a3e18a5c", "name": "MLK", "decimals": 8 },
     { "addr": "0xb561fef0d624c0826ff869946f6076b7c4f2ba42", "name": "SER", "decimals": 7 },
     { "addr": "0xb5a5f22694352c15b00323844ad545abb2b11028", "name": "ICX", "decimals": 18 },
+    { "addr": "0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206", "name": "NEXO", "decimals": 18 },
     { "addr": "0xb62d18dea74045e822352ce4b3ee77319dc5ff2f", "name": "EVC", "decimals": 18 },
     { "addr": "0xb63ab8e276e081b9079c3ae520c58061fa4acb45", "name": "TEC", "decimals": 18 },
     { "addr": "0xb63b606ac810a52cca15e44bb630fd42d8d1d83d", "name": "MCO", "decimals": 8 },
