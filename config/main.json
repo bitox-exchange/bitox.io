@@ -705,6 +705,7 @@
     { "addr": "0xbfa4d71a51b9e0968be4bc299f8ba6cbb2f86789", "name": "MAYY", "decimals": 18 },
     { "addr": "0xbfd4a3c26996dfc9e85a951eb615aac3b84c758b", "name": "ALPC", "decimals": 0 },
     { "addr": "0xc029ba3dc12e1834571e821d94a07de0a01138ea", "name": "QBE", "decimals": 18 },
+    { "addr": "0xc0c05862cca68b0b4c806796a6e7d965a6f18095", "name": "BTCC", "decimals": 18 },
     { "addr": "0xc0c2ee1ce1fed8f6e2764363a36db3dd4cf10022", "name": "FBL", "decimals": 2 },
     { "addr": "0xc0eb85285d83217cd7c891702bcbc0fc401e2d9d", "name": "HVN", "decimals": 8 },
     { "addr": "0xc14830e53aa344e8c14603a91229a0b925b0b262", "name": "PXBRL", "decimals": 8 },
