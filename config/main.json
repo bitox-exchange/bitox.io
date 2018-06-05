@@ -699,6 +699,7 @@
     { "addr": "0xbd35aefa375b57a801ddc87615aef1e9f353df28", "name": "TTM", "decimals": 18 },
     { "addr": "0xbd4b60a138b3fce3584ea01f50c0908c18f9677a", "name": "FNTB", "decimals": 8 },
     { "addr": "0xbdc5bac39dbe132b1e030e898ae3830017d7d969", "name": "SNOV", "decimals": 18 },
+    { "addr": "0xbdda280ee7bccc68f3be60a369b6b1eaee02493c", "name": "BITOX", "decimals": 18 },
     { "addr": "0xbddc4fe9b07ad7243abffaec9ef35daac4a3f95c", "name": "IONC", "decimals": 6 },
     { "addr": "0xbeb9ef514a379b997e0798fdcc901ee474b6d9a1", "name": "MLN", "decimals": 18 },
     { "addr": "0xbec8f6d667594fb181c9d68e5c80c910888be93d", "name": "STAKE", "decimals": 8 },
